@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0,viewport-fit=cover" />
+</head>
+
+<body>
+    <h1>Serverless Tic-Tac-Toe</h1>
+    <div class="main-buttons">
+        <button id="newgame-button" onclick="createGame()">New game</button>
+        <button id="joingame-button" onclick="joinGame()">Join game</button>
+    </div>
+    <div id="message"></div>
+    <div class="join-games" style="display: none;">
+        <table>
+            <tr>
+                <th>Play With</th>
+            </tr>
+            <tbody id="join_games">
+            </tbody>
+        </table>
+    </div>
+    <div class="player-details" style="display: none;">
+        <input type="text" id="player" placeholder="Enter player name" />
+        <input type="text" id="email" placeholder="Enter player email" />
+        <button id="creategame-button" onclick="createGame()" style="display: none;">Create game and wait</button>
+        <button id="joingame-button2" onclick="joinGame()" style="display: none;">Join game</button>
+    </div>
+    
+    <div class="running-game" style="display: none;">
+        <h2>It's X's turn!</h2>
+        <!-- Many websites are just divs on divs on divs. Pay attention to the class and id attributes. We will be using those later to style and find elements in the document -->
+        <div class="flex-container flex-column">
+            <div class="flex-container flex-wrap" id="board">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<link href="css/main.css" rel="stylesheet" media="print" onload="this.media='all'" />
+
+</html>
